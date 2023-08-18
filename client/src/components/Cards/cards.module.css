@@ -1,0 +1,12 @@
+.card {
+    /* background-image: url('https://images3.alphacoders.com/812/812062.png'); */
+    background-color: black;
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    height: 100vh;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-top: 10px;
+}

@@ -1,0 +1,117 @@
+/* .containerCard{
+    background-color: #c3cad167;
+    width: calc(16% - 2rem);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: .5rem;
+    padding: .5rem;
+    border: solid 1px #ccc;
+    border-radius: 10px;
+    box-shadow: 0 8px 18px rgba(255, 255, 255, 0.63); 
+    transition: transform 0.2s;
+}
+.containerCard:hover {
+    transform: translateY(-5px);
+}
+.image{
+    border-radius: 15px;
+    border: 1px solid black;
+    width: 100%;
+    height: 80%;
+}
+
+.front{
+    border-radius: 2rem;
+    box-shadow: 0 0 .2rem rgba(81, 255, 110, 0.461), 0 0 .1rem rgba(81, 255, 110, 0.461), 0 0 .8rem rgba(81, 255, 110, 0.461);
+    width: 100%;
+    height: 10rem;
+    padding: .1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    z-index: 1;
+    transition: all 400ms cubic-bezier(0.5, 0, 0, 1);
+}
+.containerCard:hover .front{
+    margin-top: 1rem;
+    border-radius: 2rem 2rem 0 0;
+}
+.containerCard:hover .front > img{
+    border-radius: 2rem 2rem 0 0;
+}
+
+.front > img{
+    border-radius: 2rem;
+    width: 100%;
+    height: 100%;
+}
+
+.back{
+    border-radius: 2rem;
+    width: 97%;
+    height: 10rem;
+    background: radial-gradient(rgba(11, 14, 182, 0.461), rgba(0, 0, 0, 0));
+    padding: .2rem;
+    margin-top: -10rem;
+    transition: all 400ms cubic-bezier(0.5, 0, 0, 1);
+}
+.containerCard:hover .back{
+    margin-top: 0;
+    border-radius: 0 0 2rem 2rem;
+}
+ */
+ .card {
+    width: 190px;
+    height: 254px;
+    transition: all 0.2s;
+    position: relative;
+    cursor: pointer;
+  }
+  
+  .card_inner {
+    width: inherit;
+    height: inherit;
+    background: rgba(255,255,255,.05);
+    box-shadow: 0 0 10px rgba(0,0,0,0.25);
+    backdrop-filter: blur(10px);
+    border-radius: 8px;
+  }
+  
+  .card:hover {
+    transform: scale(1.04) rotate(1deg);
+  }
+  
+  .circle {
+    width: 100px;
+    height: 100px;
+    background: radial-gradient(#b0e633, #53ef7d);
+    border-radius: 50%;
+    position: absolute;
+    animation: move-up6 2s ease-in infinite alternate-reverse;
+  }
+  
+  .circle:nth-child(1) {
+    top: -25px;
+    left: -25px;
+  }
+  
+  .circle:nth-child(2) {
+    bottom: -25px;
+    right: -25px;
+    animation-name: move-down1;
+  }
+  
+  @keyframes move-up6 {
+    to {
+      transform: translateY(-10px);
+    }
+  }
+  
+  @keyframes move-down1 {
+    to {
+      transform: translateY(10px);
+    }
+  }
