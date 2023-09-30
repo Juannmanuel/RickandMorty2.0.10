@@ -24,9 +24,10 @@ export const getCharacterById = (id) => {
     }
 }
 export const getEpisodesBySeason = (season) => {
+    console.log(season);
     return async (dispatch) => {
         try {
-            const { data } = await axios(`http://localhost:3001/episodes/season?season=${season}`)
+            const { data } = await axios(`http://localhost:3001/episodes/season/${season}`)
             dispatch({type: GET_EPISODES_BY_SEASON, payload: data})
         } catch (error) {
             console.log(error.message);

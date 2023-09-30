@@ -1,0 +1,8 @@
+.containerFooter {
+    max-width: 100%;
+    background-color: aquamarine;
+    margin: 1px 4px;
+    display: flex;
+    text-align: center;
+    
+}

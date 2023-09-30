@@ -1,26 +1,33 @@
-import React from 'react';
-import style from './landing.module.css'
-import { useDispatch, useSelector } from "react-redux";
-import {getEpisodesBySeason} from "../../redux/actions"
+import image1 from "../../images/rickandmortyLanding3.jpg"
+import image2 from "../../images/rickandmortyLanding1.jpg"
+import image3 from "../../images/rickandmortyLanding5.jpg"
+import image4 from "../../images/rickandmortyLanding7.jpg"
+import image5 from "../../images/rickandmortyLanding8.jpg"
 
-const LandingPage = () => {
-  const dispatch = useDispatch()
-  const handleEpisode = (event) => {
-    dispatch(getEpisodesBySeason(event.target.name))
-  }
-const episode = useSelector((state) => state.episodes)
-console.log("landing==>", episode);
+import { getEpisodesBySeason } from "../../redux/actions"
+import "./LandingPage.module.css"
+import { useDispatch, useSelector } from "react-redux"
+import { useNavigate } from "react-router-dom"
+export default function Landing (){
+const navigate = useNavigate()
+const dispatch = useDispatch()
 
-  return (
-    <div>
-      <section>
-        <img name='S01' onClick={handleEpisode} src="https://i.pinimg.com/564x/e8/06/82/e806821115ebcc776d6d35178808c9c3.jpg" alt="" />
-        <img name='S02' onClick={handleEpisode} src="https://es.web.img3.acsta.net/pictures/18/10/31/17/34/3276204.jpg" alt="" />
-        <img name='S03' onClick={handleEpisode} src="https://i.pinimg.com/564x/ea/15/99/ea1599866e59aeb1926178ebb4a819ed.jpg" alt="" />
-        <img name='S04' onClick={handleEpisode} src="https://e1.pxfuel.com/desktop-wallpaper/698/972/desktop-wallpaper-rick-and-morty-tv-series-cartoon-digital-art-rick-and-morty-iphone.jpg" alt="" />
-        <img name='S05' onClick={handleEpisode} src="https://i.pinimg.com/564x/fd/1c/46/fd1c464dfa4ff6792f9a55453a563cf5.jpg" alt="" />
-      </section>
-    </div>
-  )
+const handleSeason = (string) => {
+ dispatch(getEpisodesBySeason(string))
+ 
+ 
 }
-export default LandingPage
+return (
+    
+    <section>
+        <img onClick={()=>{handleSeason("s01");}} src={image1} alt="RickAndMorty" />
+        <img onClick={()=>{handleSeason("s02");}} src={image2} alt="RickAndMorty" />
+        <img onClick={()=>{handleSeason("s03");}} src={image3} alt="RickAndMorty" />
+        <img onClick={()=>{handleSeason("s04");}} src={image4} alt="RickAndMorty" />
+        <img onClick={()=>{handleSeason("s05");}} src={image5} alt="RickAndMorty" />
+    </section>
+
+        
+    
+)
+}

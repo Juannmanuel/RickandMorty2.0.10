@@ -10,7 +10,7 @@ const getAllCharacters = async (req, res) => {
   }
 };
 const getCharacterByName = async (req, res) => {
-  const { name } = req.query;
+  const { name } = req.params;
   if (!name) throw Error("Debe ingresar un nombre");
   try {
     const characterByName = await Character.findAll({

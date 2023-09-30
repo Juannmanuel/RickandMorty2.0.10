@@ -1,0 +1,164 @@
+.containerHome {
+    display: flex;
+    flex-flow: row wrap;
+    max-width: 100%;
+    max-height: 100%;
+    margin-right: 15rem;
+}
+.welcome {
+    display: flex;
+    position: relative;
+    top: 5rem;
+    left: 8rem;
+    height: 45rem;
+    width: 80rem;
+    background-image: url(https://images2.alphacoders.com/642/642540.png);
+    border-radius: 1rem;
+    text-align: center;
+    font-size: 2.5rem;
+    box-shadow: 0 0 50px rgba(10, 255, 0, 0.5);
+    color: rgba(10, 255, 0, 0.5);    
+}
+
+.welcome h1 {
+    color: #FF69B4;
+}
+.titleWelcomeDescription{
+    position: relative;
+   top: 12rem;
+   left: 15rem;
+   right: 5rem;
+   font-size: 5rem;
+   background-color: rgb(245, 245, 245);
+   box-shadow: 0 0 50px rgba(10, 255, 0, 0.5);
+   max-width: 40rem;
+   max-height: 15rem;
+   font-family: 'Get Schwifty', Dafont;
+   align-items: center;
+}
+.descriptionHome{
+    color: aliceblue;
+    position: relative;
+    top: 10rem;
+    left: 2rem;
+    height: 25rem;
+    width: 30rem;
+    font-family: 'Get Schwifty', Dafont;
+    
+    
+    font-size: 1.8rem;
+    border-radius: 10px;
+}
+.titleWelcome {
+    font-size: 15rem;
+    position: relative;
+    left: 4rem;
+    background-color: aliceblue;
+    border-radius: 5px;
+    box-shadow: 0 0 50px rgba(10, 255, 0, 0.5);
+}
+.landing{
+    position: relative;
+    top: 1rem;
+    left: 35rem;
+    
+    
+}
+.containerEpisodes {
+    position: relative;
+    top: 12rem;
+    left: 7rem;
+    box-shadow: 0 0 50px rgba(10, 255, 0, 0.5);
+}
+.titleEpisodes{
+    background-color: antiquewhite;
+    position: relative;
+    height: 4rem;
+    width: 75rem;
+    font-size: 2rem;
+    text-align: center;
+    border-radius: 5px;
+}
+.conteinerImages{
+      overflow: auto;
+}
+.sectionCards {
+    display: flex;
+    width: 75rem;
+    height: 20rem;
+    box-shadow: 0 0 50px rgba(10, 255, 0, 0.5);
+    
+}
+section img {
+    width: 0px;
+    flex-grow: 1;
+    object-fit: cover;
+    opacity: .8;
+    transition: .5s ease;
+}
+section img:hover {
+    cursor: crosshair;
+    width: 180px;
+    opacity: 10%;
+    filter: contrast(120%);
+}
+    
+
+
+/* .bienvenida {
+   color: #faebd7;
+   margin-top: 5rem;
+   margin-left: 1rem;
+   backdrop-filter: blur(5px);
+   background-image: url(../../images/RickAndMortyPortal.jpg);
+   background-size: cover;
+   position: relative;
+   height: 30rem;
+   width: 50rem;
+   box-shadow: 0 0 50px rgba(0, 255, 0, 0.5);
+   font-family: 'Get Schwifty', Dafont;
+    font-size: 3rem;
+   text-align: center;
+
+   /* padding: 1%; */
+
+   /* justify-content: center; */
+
+   /* overflow: hidden; */
+   /* background-repeat: initial;
+   
+   top: 5px;
+}
+.titleHome{
+    height: 70%;
+    width: 100%;
+    position: relative;
+    top: 3rem;
+}
+.imagenHome {
+    
+}
+.bienvenida h2 {
+    font-size: 80px;
+    background-color: #00FF00;
+    border-radius: 10px;
+    color: black;
+}
+.bienvenida p {
+    font-size: 40px;
+    color: black;
+
+}
+.containerLanding {
+    position: relative;
+    top: 30rem;
+    width: 10rem;
+    height: 10rem;
+    margin-right: 40rem;
+}
+.descripcionHome{
+    position: relative;
+    top: 600px;
+    
+} */
+     

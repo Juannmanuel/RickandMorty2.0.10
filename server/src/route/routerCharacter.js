@@ -4,7 +4,7 @@ const { getAllCharacters, getCharacterByName, getCharacterById } =  require("../
 
 
 routerCharacter.get("/", getAllCharacters )
-routerCharacter.get("/name", getCharacterByName)
+routerCharacter.get("/:name", getCharacterByName)
 routerCharacter.get("/:id", getCharacterById)
 
 

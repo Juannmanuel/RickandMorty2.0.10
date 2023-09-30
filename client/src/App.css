@@ -1,5 +1,8 @@
-body{
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+/* Reset de margen y relleno para el cuerpo */
+body {
+  background-color: black;
+  display: block;
+  overflow: auto;
+
 }
+

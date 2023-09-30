@@ -23,7 +23,7 @@ const getEpisodeById = async (req, res) => {
 }
 
 const getEpisodeBySeason = async (req, res) =>{
-    const {season} = req.query
+    const {season} = req.params
     if(!season) throw Error("No hay")
     try {
         const episodeBySeason = await Episode.findAll({
